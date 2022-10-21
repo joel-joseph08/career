@@ -83,16 +83,16 @@ if(isset($_SESSION['islogged'])){
              echo "<script>alert('Login Successful !!')</script>";
                 header('Location: index.php');
             }
-            // if($role=='customer'){
-            //     header('Location: customer/index.php');
-            // }
-            // else if($role=='seller'){
-            //     header('Location: seller/index.php');
-            // }
-            /*session_start();
-            $_SESSION["id"] = $row['id'];
-            $_SESSION["name"] = $row['name'];*/
-             // Store Session Data
+            if($role=='student'){
+              header('Location: index.php');
+              }
+              else if($role=='admin'){
+              header('Location: course.html');
+              }
+              session_start();
+              $_SESSION["id"] = $row['id'];
+              $_SESSION["name"] = $row['name']; 
+            //Store Session Data
 
          
         }
@@ -114,9 +114,9 @@ if(isset($_SESSION['islogged'])){
                         <select name="role" id="role" required>
                             <option value="" disabled selected>Select your role</option>
                             <option value="admin">Admin</option>
-                            <option value="customer">student</option>
-                            <option value="seller">employ</option>
-                            <option value="delivary_agent">company</option>
+                            <option value="student">student</option>
+                            <option value="employ">employ</option>
+                            <option value="company">company</option>
                         </select>
                     </div>
 
@@ -146,7 +146,8 @@ if(isset($_SESSION['islogged'])){
 
                     <div class="input-field button">
                         <input type="submit" name="login-submit" value="Login">
-                    </div>
+                    
+                      </div>
                 </form>
 
                 <div class="login-signup">

@@ -13,7 +13,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-image: url(../img/lap2.jpg);
+      background-image: url(../img/bk.jpg);
       background-repeat: no-repeat;
       background-size: cover;
   }
@@ -22,7 +22,7 @@
       position: relative;
       max-width: 600px;
       width: 100%;
-      background: #fff;
+      background: rgb(35, 31, 31);
       border-radius: 10px;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
       overflow: hidden;

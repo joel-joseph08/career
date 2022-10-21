@@ -74,18 +74,18 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>SMART CAREER</h1>
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>CAREER</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Courses</a>
+                    <a href="course.html" class="nav-item nav-link active">Courses</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resume</a>
                         <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">Course Detail</a>
+                            <a href="course.html" class="dropdown-item">Course Detail</a>
                             <a href="feature.html" class="dropdown-item">Our Features</a>
                             <a href="team.html" class="dropdown-item">Instructors</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
@@ -94,12 +94,12 @@
                     <a href="contact.html" class="nav-item nav-link">Interview Prep</a>
                     <a href="contact.html" class="nav-item nav-link">Apply For Job</a>
                 </div>
-                <a href="login.php" class="btn btn-primary py-2 px-4 d-none d-lg-block">Sign Up</a>
+                <a href="login.php" class="btn btn-success py-2 px-4 d-none d-lg-block">Sign Up</a>
                 <?php
                                 if($islogged==false){
                                     echo '
                                         <li class="nav-item ">
-                                            <a class="nav-link " href="login.php">Login</a>
+                                            <a class="btn btn-primary" href="login.php">Login  </a>
                                         </li>
                                     ';
                                 }
@@ -109,7 +109,7 @@
                                 if($islogged==true){
                                     echo '
                                         <li class="nav-item ">
-                                            <a class="nav-link " href="logout.php ">LOGOUT</a>
+                                            <a class="btn btn-light" href="logout.php ">LOGOUT</a>
                                         </li>
                                     ';
                                 }
@@ -119,7 +119,7 @@
                                 if($islogged==true){
                                     echo '
                                         <li>
-                                            <p class="nav-link" style="color: white;">
+                                            <p class="nav-link" style="color: black;">
                                                 '.$_SESSION["login_user"].'
                                             </p>
                                         </li>
@@ -144,9 +144,9 @@
                         <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Courses</button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Courses 1</a>
-                            <a class="dropdown-item" href="#">Courses 2</a>
-                            <a class="dropdown-item" href="#">Courses 3</a>
+                            <a class="dropdown-item" href="#">Web Development</a>
+                            <a class="dropdown-item" href="#">Cloud Computing</a>
+                            <a class="dropdown-item" href="#">Java Programming</a>
                         </div>
                     </div>
                     <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
@@ -172,9 +172,9 @@
                 <div class="col-lg-7">
                     <div class="section-title position-relative mb-4">
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">About Us</h6>
-                        <h1 class="display-4">First Choice For Online Education Anywhere</h1>
+                        <h1 class="display-4">First Choice For Career From Anywhere</h1>
                     </div>
-                    <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+                    <p>For every student,every classroom.Real results.We’re a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</p>
                     <div class="row pt-3 mx-0">
                         <div class="col-3 px-0">
                             <div class="bg-success text-center p-4">
@@ -217,14 +217,14 @@
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Why Choose Us?</h6>
                         <h1 class="display-4">Why You Should Start Learning with Us?</h1>
                     </div>
-                    <p class="mb-4 pb-2">Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.</p>
+                    <p class="mb-4 pb-2">Propel your career, get a degree, or expand your knowledge at any level.Upskill employees and build a culture of learning.Expand your curriculum through blended learning.</p>
                     <div class="d-flex mb-3">
                         <div class="btn-icon bg-primary mr-4">
                             <i class="fa fa-2x fa-graduation-cap text-white"></i>
                         </div>
                         <div class="mt-n1">
-                            <h4>Skilled Instructors</h4>
-                            <p>Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
+                            <h4>Personalized learning</h4>
+                            <p>Students practice at their own pace, first filling in gaps in their understanding and then accelerating their learning.</p>
                         </div>
                     </div>
                     <div class="d-flex mb-3">
@@ -232,8 +232,8 @@
                             <i class="fa fa-2x fa-certificate text-white"></i>
                         </div>
                         <div class="mt-n1">
-                            <h4>International Certificate</h4>
-                            <p>Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
+                            <h4>Trusted content</h4>
+                            <p>Created by experts, Academy’s library of trusted, standards-aligned practice and lessons covers math K-12 through early college, grammar, science, history, SAT®, and more. It’s all free for learners and teachers.</p>
                         </div>
                     </div>
                     <div class="d-flex">
@@ -271,7 +271,7 @@
             <div class="courses-item position-relative">
                 <img class="img-fluid" src="img/courses-1.jpg" alt="">
                 <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <h4 class="text-center text-white px-3">Web design & development</h4>
                     <div class="border-top w-100 mt-3">
                         <div class="d-flex justify-content-between p-4">
                             <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
@@ -286,7 +286,7 @@
             <div class="courses-item position-relative">
                 <img class="img-fluid" src="img/courses-2.jpg" alt="">
                 <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <h4 class="text-center text-white px-3">Cloud Computing</h4>
                     <div class="border-top w-100 mt-3">
                         <div class="d-flex justify-content-between p-4">
                             <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
@@ -301,7 +301,7 @@
             <div class="courses-item position-relative">
                 <img class="img-fluid" src="img/courses-3.jpg" alt="">
                 <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <h4 class="text-center text-white px-3">Data Structures And Algorithms</h4>
                     <div class="border-top w-100 mt-3">
                         <div class="d-flex justify-content-between p-4">
                             <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
@@ -316,7 +316,7 @@
             <div class="courses-item position-relative">
                 <img class="img-fluid" src="img/courses-4.jpg" alt="">
                 <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <h4 class="text-center text-white px-3">Java Programming</h4>
                     <div class="border-top w-100 mt-3">
                         <div class="d-flex justify-content-between p-4">
                             <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
@@ -331,7 +331,7 @@
             <div class="courses-item position-relative">
                 <img class="img-fluid" src="img/courses-5.jpg" alt="">
                 <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <h4 class="text-center text-white px-3">MERN Stack </h4>
                     <div class="border-top w-100 mt-3">
                         <div class="d-flex justify-content-between p-4">
                             <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
@@ -346,7 +346,7 @@
             <div class="courses-item position-relative">
                 <img class="img-fluid" src="img/courses-6.jpg" alt="">
                 <div class="courses-text">
-                    <h4 class="text-center text-white px-3">Web design & development courses for beginners</h4>
+                    <h4 class="text-center text-white px-3">Phython Programming</h4>
                     <div class="border-top w-100 mt-3">
                         <div class="d-flex justify-content-between p-4">
                             <span class="text-white"><i class="fa fa-user mr-2"></i>Jhon Doe</span>
@@ -410,7 +410,7 @@
                 <div class="team-item">
                     <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
                     <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Joel</h5>
+                        <h5 class="mb-3"></h5>
                         <p class="mb-2">Web Design & Development</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
@@ -424,7 +424,7 @@
                 <div class="team-item">
                     <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
                     <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Sreelakshmi Rrrrrr</h5>
+                        <h5 class="mb-3">Angela Yu</h5>
                         <p class="mb-2">Web Design & Development</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
@@ -438,7 +438,7 @@
                 <div class="team-item">
                     <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
                     <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Stebin</h5>
+                        <h5 class="mb-3">Stephen</h5>
                         <p class="mb-2">Web Design & Development</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
@@ -452,7 +452,7 @@
                 <div class="team-item">
                     <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
                     <div class="bg-light text-center p-4">
-                        <h5 class="mb-3">Joel</h5>
+                        <h5 class="mb-3">Jennies</h5>
                         <p class="mb-2">Web Design & Development</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
@@ -558,7 +558,7 @@
                                 <div class="col-6 form-group">
                                     <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
                                 </div>
-                                <div class="col-6 form-group">
+                             x   <div class="col-6 form-group">
                                     <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required="required">
                                 </div>
                             </div>
