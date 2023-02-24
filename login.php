@@ -27,11 +27,11 @@ if(isset($_SESSION['islogged'])){
     <title>Login & Registration Form</title>
 </head>
 
-<body>
+<body> 
 <?php
     include('dbconn.php');
 
-    if(isset($_POST['signup-submit']))
+    if(isset($_POST['signup-submit']))     // receive all input values from the form
     {
         $_SESSION['valid'] = true;
         $_SESSION['timeout'] = time();
@@ -41,11 +41,11 @@ if(isset($_SESSION['islogged'])){
         $name= $firstname." ".$lastname;
         $phone = $_POST['phone'];
         $gender = $_POST['gender'];
-        $password = $_POST['password'];
+        $password = $_POST['password'];                  
         $pass=md5($password);
         $role=$_POST['role'];
         $status=1;
-        $sql1 = "INSERT INTO tbl_regis VALUES ('$uid', '$name', '$phone', '$gender', '$pass', '$role', '$status')";
+        $sql1 = "INSERT INTO tbl_regis VALUES ('$uid', '$name', '$phone', '$gender', '$pass','$role', '$status')";
         if(mysqli_query($conn, $sql1)){
            
             $sql2 = "INSERT INTO tbl_login (`u_Id`,`user_passwrd`,`user_role`,`status`) VALUES ('$uid','$pass','$role','$status')";
@@ -54,7 +54,7 @@ if(isset($_SESSION['islogged'])){
                 $_SESSION['islogged']=true;
                 $_SESSION['login_user']= $name;
                 header('Location: index.php');
-                
+                                                    //Finally, register user if there are no errors in the form
             } else{
                 echo "ERROR: Could not able to execute $sql2. " . mysqli_error($conn);
             }
@@ -69,8 +69,7 @@ if(isset($_SESSION['islogged'])){
         $role=$_POST['role'];
         $password = $_POST['password'];
         $pass=md5($password);
-
-        $login_sql= "SELECT * FROM tbl_login WHERE u_Id='$uid' AND user_passwrd='$pass' AND user_role='$role'";
+        $login_sql= "SELECT * FROM tbl_login WHERE u_Id='$uid' AND user_passwrd='$pass'";
         $logress=mysqli_query($conn,$login_sql);
         //echo($logress);
         if (mysqli_num_rows($logress) === 1) {
@@ -86,13 +85,19 @@ if(isset($_SESSION['islogged'])){
             if($role=='student'){
               header('Location: index.php');
               }
-              else if($role=='admin'){
-              header('Location: course.html');
-              }
-              session_start();
-              $_SESSION["id"] = $row['id'];
-              $_SESSION["name"] = $row['name']; 
+            //   else if($role=='admin'){
+            //   header('Location: adm/Adminpanel.php');
+            //   }
+            //   session_start();
+            //   $_SESSION["id"] = $row['id'];
+            //   $_SESSION["name"] = $row['name']; 
             //Store Session Data
+                else if($role=='company'){
+                header('Location: ../Job/jobindex.php');
+                }
+                session_start();
+                $_SESSION["id"] = $row['id'];
+                $_SESSION["name"] = $row['name'];
 
          
         }
@@ -141,7 +146,7 @@ if(isset($_SESSION['islogged'])){
                             <label for="logCheck" class="text">Remember me</label>
                         </div>
 
-                        <a href="../mobiletemplate/resetpassFolder/forgot-password.php" class="text">Forgot password?</a>
+                        <a href="recover_psw.php" class="text">Forgot password?</a>
                     </div>
 
                     <div class="input-field button">
@@ -209,9 +214,9 @@ if(isset($_SESSION['islogged'])){
                         <i class="fa fa-tasks icon"></i>
                             <select name="role" id="reg_role" required>
                                 <option value="" disabled selected>Select your role</option>
-                                <option value="customer">student</option>
+                                <option value="student">student</option>
                                 <option value="seller">employ</option>
-                                <option value="delivary_agent">company</option>
+                                <option value="company">company</option>
                             </select>
                         </div>
                     </div>

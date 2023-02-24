@@ -18,22 +18,22 @@
                     <div class="flex item justify-content-between">
                         <div class="flex">
                             <div class="img text-center">
-                                <img src="./assets/pro1.png" alt="">
+                                <img src="./assets/pro2.png" alt="">
                             </div>
                             <div class="title">
                                 <h3>Full stack WEB Development</h3>
                                 <span>MERN Stack</span>
                                 <div class="buttons">
-                                    <button type="submit"><i class="fas fa-chevron-up"></i> </button>
+                                    <!-- <button type="submit"><i class="fas fa-chevron-up"></i> </button>
                                     <input type="text" class="font-title" value="1">
-                                    <button type="submit"><i class="fas fa-chevron-down"></i> </button>
+                                    <button type="submit"><i class="fas fa-chevron-down"></i> </button> -->
                                 </div>
-                                <a href="#">Save for later</a> |
-                                <a href="#">Delete From Cart</a>
+                                <!-- <a href="#">Save for later</a> |
+                                <a href="#">Delete From Cart</a> -->
                             </div>
                         </div>
                         <div class="price">
-                            <h4 class="text-red">$349</h4>
+                            <h4 class="text-red">$300</h4>
                         </div>
                     </div>
                 </div>
@@ -42,8 +42,8 @@
                         <h3>Price Details</h3>
                         <ul>
                             <li class="flex justify-content-between">
-                                <label for="price">Products ( 3 items ) : </label>
-                                <span>$399</span>
+                                <label for="price">Web Dev : </label>
+                                <span>$300</span>
                             </li>
                             <li class="flex justify-content-between">
                                 <label for="price">Delivery Charges : </label>
@@ -52,7 +52,7 @@
                             <hr>
                             <li class="flex justify-content-between">
                                 <label for="price">Amout Payble : </label>
-                                <span class="text-red font-title">$399</span>
+                                <span class="text-red font-title">$300</span>
                             </li>
                         </ul>
                         <div id="paypal-payment-button">

@@ -74,7 +74,7 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>CAREER</h1>
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>SMART CAREER</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -85,19 +85,21 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resume</a>
                         <div class="dropdown-menu m-0">
-                            <a href="course.html" class="dropdown-item">Course Detail</a>
-                            <a href="feature.html" class="dropdown-item">Our Features</a>
+                            <a href="course.html" class="dropdown-item">Resume example</a>
+                            <a href="feature.html" 
+                            class="dropdown-item">Templates</a>
                             <a href="team.html" class="dropdown-item">Instructors</a>
+                        
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Interview Prep</a>
                     <a href="contact.html" class="nav-item nav-link">Apply For Job</a>
                 </div>
-                <a href="login.php" class="btn btn-success py-2 px-4 d-none d-lg-block">Sign Up</a>
                 <?php
                                 if($islogged==false){
                                     echo '
+                                    `   <a href="login.php" class="btn btn-success py-2 px-4 d-none d-lg-block">Sign Up</a>
                                         <li class="nav-item ">
                                             <a class="btn btn-primary" href="login.php">Login  </a>
                                         </li>
@@ -141,18 +143,18 @@
             <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
+                        <!-- <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Courses</button>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Web Development</a>
                             <a class="dropdown-item" href="#">Cloud Computing</a>
                             <a class="dropdown-item" href="#">Java Programming</a>
-                        </div>
+                        </div> -->
                     </div>
-                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
-                    <div class="input-group-append">
+                    <!-- <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword"> -->
+                    <!-- <div class="input-group-append">
                         <button class="btn btn-secondary px-4 px-lg-5">Search</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -178,25 +180,25 @@
                     <div class="row pt-3 mx-0">
                         <div class="col-3 px-0">
                             <div class="bg-success text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">123</h1>
+                                <h1 class="text-white" data-toggle="counter-up">20</h1>
                                 <h6 class="text-uppercase text-white">Available<span class="d-block">Subjects</span></h6>
                             </div>
                         </div>
                         <div class="col-3 px-0">
                             <div class="bg-primary text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">1234</h1>
+                                <h1 class="text-white" data-toggle="counter-up">30</h1>
                                 <h6 class="text-uppercase text-white">Online<span class="d-block">Courses</span></h6>
                             </div>
                         </div>
                         <div class="col-3 px-0">
                             <div class="bg-secondary text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">123</h1>
+                                <h1 class="text-white" data-toggle="counter-up">25</h1>
                                 <h6 class="text-uppercase text-white">Skilled<span class="d-block">Instructors</span></h6>
                             </div>
                         </div>
                         <div class="col-3 px-0">
                             <div class="bg-warning text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">1234</h1>
+                                <h1 class="text-white" data-toggle="counter-up">200</h1>
                                 <h6 class="text-uppercase text-white">Happy<span class="d-block">Students</span></h6>
                             </div>
                         </div>
@@ -364,7 +366,7 @@
                 <div class="bg-white p-5 my-5">
                     <h1 class="text-center mb-4">30% Off For New Students</h1>
                     <form>
-                        <div class="form-row">
+                        <!-- <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;">
@@ -375,7 +377,7 @@
                                     <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="padding: 30px 20px;">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
@@ -388,7 +390,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <button class="btn btn-primary btn-block" type="submit" style="height: 60px;">Sign Up Now</button>
+                                <button class="btn btn-primary btn-block" type="submit" style="height: 60px;" href="">Sign Up Now</button>
                             </div>
                         </div>
                     </form>
@@ -410,8 +412,8 @@
                 <div class="team-item">
                     <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
                     <div class="bg-light text-center p-4">
-                        <h5 class="mb-3"></h5>
-                        <p class="mb-2">Web Design & Development</p>
+                        <h5 class="mb-3">sane</h5>
+                        <p class="mb-2">Python</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -425,7 +427,7 @@
                     <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
                     <div class="bg-light text-center p-4">
                         <h5 class="mb-3">Angela Yu</h5>
-                        <p class="mb-2">Web Design & Development</p>
+                        <p class="mb-2">Cloud Computing</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -453,7 +455,7 @@
                     <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
                     <div class="bg-light text-center p-4">
                         <h5 class="mb-3">Jennies</h5>
-                        <p class="mb-2">Web Design & Development</p>
+                        <p class="mb-2">Data Structures</p>
                         <div class="d-flex justify-content-center">
                             <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -478,29 +480,31 @@
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Testimonial</h6>
                         <h1 class="display-4">What Say Our Students</h1>
                     </div>
-                    <p class="m-0">Dolor est dolores et nonumy sit labore dolores est sed rebum amet, justo duo ipsum sanctus dolore magna rebum sit et. Diam lorem ea sea at. Nonumy et at at sed justo est nonumy tempor. Vero sea ea eirmod, elitr ea amet diam ipsum at amet. Erat sed stet eos ipsum diam</p>
+                    <p class="m-0">Over the year,SMART CAREER have been sending their people to learn skills from us. 
+                        At the end of each course, we survey our students. Here are just a few of their responses.</p>
                 </div>
                 <div class="col-lg-7">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="bg-white p-5">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <p>Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
+                            <p>The courses are well laid out and the instructors are supportive and responsible in returning emails. Thanks SMART CAREER for allowing me to have a flexible schedule while finishing my degree."</p>
                             <div class="d-flex flex-shrink-0 align-items-center mt-4">
                                 <img class="img-fluid mr-4" src="img/testimonial-2.jpg" alt="">
                                 <div>
-                                    <h5>Student Name</h5>
+                                    <h5>Zyan B</h5>
                                     <span>Web Design</span>
                                 </div>
                             </div>
                         </div>
                         <div class="bg-white p-5">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <p>Sed et elitr ipsum labore dolor diam, ipsum duo vero sed sit est est ipsum eos clita est ipsum. Est nonumy tempor at kasd. Sed at dolor duo ut dolor, et justo erat dolor magna sed stet amet elitr duo lorem</p>
+                            <p>I received my certificate, and I would like to thank you for your support. Your course was challenging, but you were always there supporting me and ready to help. I enjoyed your class tremendously. 
+                                I look forward to taking another class with you.</p>
                             <div class="d-flex flex-shrink-0 align-items-center mt-4">
                                 <img class="img-fluid mr-4" src="img/testimonial-1.jpg" alt="">
                                 <div>
-                                    <h5>Student Name</h5>
-                                    <span>Web Design</span>
+                                    <h5>Denna</h5>
+                                    <span>Cloud Computing</span>
                                 </div>
                             </div>
                         </div>
@@ -524,7 +528,7 @@
                             </div>
                             <div class="mt-n1">
                                 <h4>Our Location</h4>
-                                <p class="m-0">123 Street, New York, USA</p>
+                                <p class="m-0">AMAL JYOTHI COLLAGE ,KOTTAYAM</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-5">
@@ -533,7 +537,7 @@
                             </div>
                             <div class="mt-n1">
                                 <h4>Call Us</h4>
-                                <p class="m-0">+012 345 6789</p>
+                                <p class="m-0">+91 7025747442</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -542,7 +546,7 @@
                             </div>
                             <div class="mt-n1">
                                 <h4>Email Us</h4>
-                                <p class="m-0">info@example.com</p>
+                                <p class="m-0">joeljoseph747@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -586,10 +590,10 @@
             <div class="row">
                 <div class="col-md-6 mb-5">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>Edukate</h1>
+                        <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>SMART CAREER</h1>
                     </a>
-                    <p class="m-0">Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem at et diam est, tempor rebum ipsum sit ea tempor stet et consetetur dolores. Justo stet diam ipsum lorem vero clita diam</p>
-                </div>
+                    <!-- <p class="m-0">Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem at et diam est, tempor rebum ipsum sit ea tempor stet et consetetur dolores. Justo stet diam ipsum lorem vero clita diam</p>
+                </div> -->
                 <div class="col-md-6 mb-5">
                     <h3 class="text-white mb-4">Newsletter</h3>
                     <div class="w-100">
@@ -605,9 +609,9 @@
             <div class="row">
                 <div class="col-md-4 mb-5">
                     <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>AMAL JYOTHI COLLAGE ,KOTTAYAM</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+91 7025747442</p>
+                    <p><i class="fa fa-envelope mr-2"></i>joeljoseph747@gmail.com</p>
                     <div class="d-flex justify-content-start mt-4">
                         <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
                         <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
@@ -642,11 +646,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Your Site Name</a>. All Rights Reserved.
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">SMART CAREER</a>. All Rights Reserved.
                     </p>
                 </div>
                 <div class="col-md-6 text-center text-md-right">
-                    <p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    <!-- p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>< -->
                     </p>
                 </div>
             </div>

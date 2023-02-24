@@ -11,8 +11,10 @@
 <body>
 <main id="cart-main">
     <div class="site-title text-center">
-        <div><img src="./assets/checked.png" alt=""></div>
+        <!-- <div><img src="./assets/checked.png" alt=""></div> -->
         <h1 class="font-title">Payment Done Successfully...!</h1>
+        <a href="webdev.html" class="btn btn-primary">Back to Course</a>
+
     </div>
 </main>
 </body>
