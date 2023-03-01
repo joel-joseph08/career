@@ -85,7 +85,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resume</a>
                         <div class="dropdown-menu m-0">
-                            <a href="resume/frond/index.php" class="dropdown-item">Resume example</a>
+                            <a href="resume/indexpage.html" class="dropdown-item">Resume example</a>
                             <a href="resume/frond/index.php" 
                             class="dropdown-item">Templates</a>
                             <!-- <a href="team.html" class="dropdown-item">Instructors</a>
