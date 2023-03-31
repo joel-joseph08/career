@@ -210,6 +210,7 @@ if(isset($_SESSION['islogged'])){
                             </select>
                         </div>
 
+                        
                         <div class="custom_select" id="role-div">
                         <i class="fa fa-tasks icon"></i>
                             <select name="role" id="reg_role" required>

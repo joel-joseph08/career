@@ -12,6 +12,19 @@
 <html lang="en">
 
 <head>
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"2c224ffd1cc6566ab2b40e7c72622c22c","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+
+
     <meta charset="utf-8">
     <title>Edukate - Online Education Website Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -93,8 +106,8 @@
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Interview Prep</a>
-                    <a href="contact.html" class="nav-item nav-link">Apply For Job</a>
+                    <a href="admin_panel/index.php" class="nav-item nav-link">Interview Prep</a>
+                    <a href="jobboard-master/index.html" class="nav-item nav-link">Apply For Job</a>
                 </div>
                 <?php
                                 if($islogged==false){

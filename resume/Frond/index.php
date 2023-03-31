@@ -89,10 +89,29 @@
                     <label for="exampleInputEmail1" class="form-label">School/College/University</label>
                     <input type="text" name="institute1" class="form-control">
                 </div>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Degree Name</label>
                     <input type="text" name="degree1" class="form-control">
-                </div>
+                </div> -->
+
+            <div class="input-box">
+            <span class="details">Degree Name</span>
+            <select class="details" style="color:black" name="pstation">  
+                <option value="Select">Select....</option>
+                <option value="html">MCA</option>   
+                <option value="css">Int MCA</option>
+                <option value="javascript">BCA</option>
+                <option value="bootstrap">BSc Computer Science</option>
+                <option value="react">B. Tech CS</option>
+                <option value="vue">B. Tech EE</option>
+                <option value="2">MBA</option>
+                <option value="4"> MSc Computer Science</option>
+                <option value="5"> BBA</option>
+                <option value="6">B. Tech IT</option>
+                <option value="7"></option></select>
+            <span id="ps" class="new" style="color: red; font-size: small;"></span>
+            </div>
+            <br>
                 <div class="mb-3 d-flex justify-content-between">
                     <div>
                         <label for="exampleInputEmail1" class="form-label">From</label>
@@ -113,7 +132,7 @@
                 </div>
             </div>
             <div class="border border-dark p-3 mb-3">    
-                <h2>Experience (Max:3)</h2>
+                <h2>Projects (Max:3)</h2>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Title</label>
                     <input type="text" name="title1" class="form-control">
