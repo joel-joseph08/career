@@ -257,15 +257,15 @@ if (isset($_POST['Send-Application'])) {
                 <input type="text" class="form-control" name="link" id="company-website-tw" placeholder="Linkedin Id">
               </div>
 
-              <!-- <div class="form-group">
+              <div class="form-group">
                 <label for="company-website-tw d-block">Upload Resume</label> <br>
                 <label class="btn btn-primary btn-md btn-file">
                   Browse File<input type="file" hidden>
                 </label>
-              </div> -->
+              </div>
 
             
-          </div>
+          </div>  
 
 
         </div>
