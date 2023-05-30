@@ -92,13 +92,14 @@ if(isset($_SESSION['islogged'])){
             //   $_SESSION["id"] = $row['id'];
             //   $_SESSION["name"] = $row['name']; 
             //Store Session Data
-                else if($role=='company'){
-                header('Location: ../Job/jobindex.php');
+                else if($role=='admin'){
+                header('Location:../admin/index.html');
                 }
                 session_start();
                 $_SESSION["id"] = $row['id'];
                 $_SESSION["name"] = $row['name'];
-
+                
+                
          
         }
         else{
@@ -120,7 +121,7 @@ if(isset($_SESSION['islogged'])){
                             <option value="" disabled selected>Select your role</option>
                             <option value="admin">Admin</option>
                             <option value="student">student</option>
-                            <option value="employ">employ</option>
+                            <!-- <option value="employ">employ</option> -->
                             <option value="company">company</option>
                         </select>
                     </div>
@@ -210,13 +211,13 @@ if(isset($_SESSION['islogged'])){
                             </select>
                         </div>
 
-                        
+                        <!-- //registration login roles -->
                         <div class="custom_select" id="role-div">
                         <i class="fa fa-tasks icon"></i>
                             <select name="role" id="reg_role" required>
                                 <option value="" disabled selected>Select your role</option>
+                                <option value="admin">admin</option>
                                 <option value="student">student</option>
-                                <option value="seller">employ</option>
                                 <option value="company">company</option>
                             </select>
                         </div>

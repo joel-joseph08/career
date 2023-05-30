@@ -13,7 +13,8 @@
   <body>
     <center>
       <br><br><br>
-      <h3>Certificate Generator</h3>  
+      <h3>WEB DESIGN & DEVELOPMENT</h3>  
+      <h4>Certificate For The Course</h4>
       <br><br><br><br>
       <form method="post" action="">
       <div class="form-group col-sm-6">
@@ -22,7 +23,7 @@
       <div class="form-group col-sm-6">
         <input type="text" name="occupation" class="form-control" id="organization" placeholder="Enter Organization Name Here...">
       </div>
-      <button type="submit" name="generate" class="btn btn-primary">Generate</button>
+      <button type="submit" name="generate" class="btn btn-primary">Download your Certificate</button>
     </form>
     <br>
     <?php 
@@ -129,9 +130,9 @@
 
     </center>
 
-      <footer>  
+      <!-- <footer>  
           <center><p>Built with &#10084; by <a href="joel-new.netlify.app">Olawanle Joel</a></p></center>
-      </footer>
+      </footer> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

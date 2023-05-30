@@ -106,8 +106,9 @@
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
                         </div>
                     </div>
-                    <a href="admin_panel/index.php" class="nav-item nav-link">Interview Prep</a>
+                   
                     <a href="jobboard-master/index.html" class="nav-item nav-link">Apply For Job</a>
+                    <a href="admin_panel/index.php" class="nav-item nav-link">Interview Prep</a>
                 </div>
                 <?php
                                 if($islogged==false){
